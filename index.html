@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Você 💖</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #020617, #0f172a);
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    button {
+        padding: 15px 35px;
+        font-size: 18px;
+        border-radius: 30px;
+        border: none;
+        background: linear-gradient(135deg, #ec4899, #8b5cf6);
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(236,72,153,.6);
+    }
+
+    .carta {
+        display: none;
+        background: rgba(255,255,255,0.05);
+        padding: 25px;
+        border-radius: 16px;
+        max-width: 320px;
+        animation: surgir .6s ease;
+        box-shadow: 0 0 30px rgba(0,0,0,.6);
+    }
+
+    @keyframes surgir {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 14px;
+        margin-bottom: 15px;
+    }
+
+    .frase {
+        font-size: 18px;
+        margin-bottom: 12px;
+        color: #f9a8d4;
+    }
+
+    .texto {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #e5e7eb;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container" id="inicio">
+    <h1>Tenho uma surpresa pra você 💖</h1>
+    <button onclick="abrirCarta()">Clique aqui</button>
+</div>
+
+<div class="carta" id="carta">
+    <img src="foto.jpg">
+    <div class="frase">Você é a melhor parte da minha vida 💕</div>
+    <div class="texto">
+        <p>
+Nunca acreditei nessas coisas de amor à primeira vista e tal… até te conhecer, meu amor.
+<br><br>
+Você é a parte mais especial da minha vida. Nunca me dediquei tanto a algo ou alguém como me dedico a você.
+<br><br>
+Toda vez que penso em você ou olho pra você, fico orgulhoso do tanto que você cresceu como pessoa.
+<br><br>
+Fiz tudo isso para provar o meu amor por você, mas ainda não é o suficiente, porque se eu pudesse eu te daria o mundo inteiro.
+<br><br>
+Mas tem muita gente no mundo… então você vai ficar no MEU mundo.
+<br><br>
+Eu te amo, minha gatinha comunista. 🤍
+</p>
+    </div>
+</div>
+
+<script>
+function abrirCarta() {
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("carta").style.display = "block";
+}
+</script>
+
+</body>
+</html>
